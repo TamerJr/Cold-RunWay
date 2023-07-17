@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useContext } from "react";
+import { Navbar,Footer } from "./Components/ComponentsPaths";
+import { LandingPage,AboutUs,Shop } from "./Pages/PagesPaths";
+import themeContext from "./Contexts/themeContext";
+import { Routes ,Route } from "react-router-dom";
 function App() {
+  const {theme}=useContext(themeContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-theme={theme}>
+        <Navbar/>
+        <Routes>
+          <Route path ="/" element={<LandingPage/>}/>
+          <Route path ="/aboutus" element={<AboutUs/>}/>
+          <Route path ="/shop" element={<Shop/>}/>
+        </Routes>
+        <Footer/>
     </div>
   );
 }
