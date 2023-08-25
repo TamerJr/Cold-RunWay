@@ -12,9 +12,10 @@ body {
   --NormalFont-size: 18px;
   --font-weight-semibold: 800;
   --font-weight-bold: 900;
-  --text-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
   --transitions: 400ms ease-in-out;
   --hover-color: #d49f9f;
+  --navbar-textColor:#fff;
   --navbar-color: #db0000;
   --HeaderFont-size: 24px;
   --NormalFont-size: 18px;
@@ -25,6 +26,7 @@ body {
 [data-theme="dark"] {
   --text-color: rgb(180, 126, 126);
   --hover-color: #6d5d6e98;
+  --navbar-textColor:
   --navbar-color: #393646;
   --HeaderFont-size: 24px;
   --NormalFont-size: 18px;
@@ -42,17 +44,17 @@ button {
   border-radius: 7px;
   background: var(--button-bg-color);
   color: var(--navbar-color);
-  padding: 10px 15px;
+  padding: 7px 17px;
   font-weight: var(--font-weight-semibold);
 }
 button:hover {
   background: none;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   border: 1px solid var(--button-bg-color);
 }
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--navbar-textColor);
   font-weight: var(--font-weight-semibold);
   margin: 0px;
   letter-spacing: 1.3;

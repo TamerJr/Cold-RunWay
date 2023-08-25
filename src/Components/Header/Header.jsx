@@ -1,8 +1,11 @@
 import React from 'react'
+import {HeroSection} from '../ComponentsPaths'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <HeroSection/>
+    </div>
   )
 }
 

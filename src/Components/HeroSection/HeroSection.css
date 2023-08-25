@@ -1,0 +1,44 @@
+main.HeroSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main h1{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 45px;
+}
+main p{
+    color :var(--text-color);
+    opacity: .7;
+}
+main.HeroSection{
+    line-height: 1.8;
+}
+img{
+    height :300px;
+}
+.HeroSection button{
+    border : 1px solid  red
+}
+.HeroSection button:hover{
+    border : 1px solid  white;
+    color:white;
+    background-color: red;
+}
+@media only screen and (max-width:780px) {
+    .ImgContainer{
+        display: none;
+    }
+    .HeroSection{
+        display: block;
+        align-content: center;
+    }
+    .DommyText{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
